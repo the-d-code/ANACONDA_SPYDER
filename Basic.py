@@ -4,23 +4,23 @@
 =====================================LECTURE 1=============================================================================================
 
 
-// -------------------------------------------
+// ------- msg print---------------------------
 
-        msg print
+       
         msg="welcome to pythone.."
         print (msg)
 
-// -------------------------------------------
+// -----Input and print with string--------------------------
 
-        Input and print with string
+        
         val=int(input("enter a value"))
         print("welcome {}".format(val))
         print(type(val))
 
 
-// -------------------------------------------
+// -------User define function----------------
 
-                # User define function
+                
                   # declare function
                 def myf(str):
                   # str=print("Welcome to python...")
@@ -33,9 +33,9 @@
         
         
                   Output:
-                  
                   my first python function..
                   Welcome
+
                // -------------------------------------------
                 
                   # User define function
