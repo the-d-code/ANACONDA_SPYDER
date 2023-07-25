@@ -406,9 +406,16 @@
 
 // ------ Class ------------
 
-                // -------------------------
-
-
+                // -----Create class and Print value----------------
+                     class abc:
+                         def show():
+                             print("First python class")
+                     
+                     obj=abc()
+                     abc.show()
+                     
+                                   runfile('B:/ICT3-1/SPYDER/ARRAY.py', wdir='B:/ICT3-1/SPYDER')
+                                   First python class
                 // -------------------------
  
                 // -------------------------
