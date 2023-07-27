@@ -444,9 +444,27 @@
                                    Welcome Devanshi
                                           
 ============= 27/7/23 ========================================== LECTURE 3 =============================================================================================
-                // -------------------------
+                                          
+                // ------Create method and print it-----------
+
+                     class abc:
+                         def show(self):
+                             print("Welcome")
+                     
+                     class xyz(abc):
+                         def disp(self):
+                             print("xyz class method...")
+                             
+                     obj1=xyz()
+                     obj1.show()
+                     obj1.disp()
+                            
+                                   runfile('B:/ICT3-1/OTHER STUUF/SPYDER/ARRAY.py', wdir='B:/ICT3-1/OTHER STUUF/SPYDER')
+                                   Welcome
+                                   xyz class method...
 
                 // -------------------------
+
 
                 // -------------------------
  
