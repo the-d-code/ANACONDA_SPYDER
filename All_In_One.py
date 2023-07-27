@@ -463,8 +463,20 @@
                                    Welcome
                                    xyz class method...
 
-                // -------------------------
-
+                // --------Method over loading -------
+                     class abc:
+                         def show(self):
+                             print("Welcome")
+                     
+                     class xyz(abc):
+                         def show(self):
+                             print("xyz class method...")
+                             
+                     obj1=xyz()
+                     obj1.show()
+                     
+                                   runfile('B:/ICT3-1/OTHER STUUF/SPYDER/ARRAY.py', wdir='B:/ICT3-1/OTHER STUUF/SPYDER')
+                                   xyz class method...
 
                 // -------------------------
  
