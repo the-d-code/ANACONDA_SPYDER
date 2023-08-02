@@ -1,4 +1,3 @@
-
 // ------ Class ------------
 
                 // -----Create class and Print value----------------
@@ -38,4 +37,40 @@
                                    runfile('B:/ICT3-1/SPYDER/ARRAY.py', wdir='B:/ICT3-1/SPYDER')
                                    Welcome Devanshi
                                           
-                // -------------------------
+
+                                          
+                // ------Create method and print it-----------
+
+                     class abc:
+                         def show(self):
+                             print("Welcome")
+                     
+                     class xyz(abc):
+                         def disp(self):
+                             print("xyz class method...")
+                             
+                     obj1=xyz()
+                     obj1.show()
+                     obj1.disp()
+                            
+                                   runfile('B:/ICT3-1/OTHER STUUF/SPYDER/ARRAY.py', wdir='B:/ICT3-1/OTHER STUUF/SPYDER')
+                                   Welcome
+                                   xyz class method...
+
+                // --------Method over loading -------
+                     class abc:
+                         def show(self):
+                             print("Welcome")
+                     
+                     class xyz(abc):
+                         def show(self):
+                             print("xyz class method...")
+                             
+                     obj1=xyz()
+                     obj1.show()
+                     
+                                   runfile('B:/ICT3-1/OTHER STUUF/SPYDER/ARRAY.py', wdir='B:/ICT3-1/OTHER STUUF/SPYDER')
+                                   xyz class method...
+
+
+                
