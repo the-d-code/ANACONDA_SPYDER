@@ -95,3 +95,18 @@ print(n1)
         [[10 20 30]
          [40 50 60]
          [70 80 90]]
+
+import numpy as np
+
+n1=np.arange(10,90,10)
+n1.shape = (4,2)
+print(n1)
+
+
+        runfile('B:/ICT3-1/OTHER STUUF/SPYDER/ARRAY.py', wdir='B:/ICT3-1/OTHER STUUF/SPYDER')
+        [[10 20]
+         [30 40]
+         [50 60]
+         [70 80]]
+
+#
