@@ -2,7 +2,7 @@
 
 # 1d array
 
-import numpy as np
+import numpy as np<br>
 n1=np.array([10,30,50,60,90])
 print(n1)
 
