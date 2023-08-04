@@ -109,4 +109,112 @@ print(n1)
          [50 60]
          [70 80]]
 
+# CREATE RANDOM ARRAY EVERYTIME
+
+import numpy as np 
+
+n1=np.random.randint(1,100,10)
+print(n1)
+             
+        runfile('B:/ICT3-1/OTHER STUUF/SPYDER/ARRAY.py', wdir='B:/ICT3-1/OTHER STUUF/SPYDER')
+        [17 93 33 81  1 80 33 98 91 22]
+
+# COMBINE 2 NUMPY ARRAY
+
+import numpy as np
+
+n1=np.arange(1,5)
+n2=np.arange(11,15)
+print(n1)
+print(n2)
+print(np.hstack((n1,n2)))
+
+        runfile('B:/ICT3-1/OTHER STUUF/SPYDER/ARRAY.py', wdir='B:/ICT3-1/OTHER STUUF/SPYDER')
+        [1 2 3 4]
+        [11 12 13 14]
+        [ 1  2  3  4 11 12 13 14]
+
+#VARTICAL COMBINE
+
+import numpy as np
+
+n1=np.arange(1,5)
+n2=np.arange(11,15)
+print(n1)
+print(n2)
+print(np.vstack((n1,n2)))
+
+        runfile('B:/ICT3-1/OTHER STUUF/SPYDER/ARRAY.py', wdir='B:/ICT3-1/OTHER STUUF/SPYDER')
+        [1 2 3 4]
+        [11 12 13 14]
+        [[ 1  2  3  4]
+         [11 12 13 14]]
+
+#column stack
+
+import numpy as np
+
+n1=np.arange(1,5)
+n2=np.arange(11,15)
+print(n1)
+print(n2)
+print(np.column_stack((n1,n2)))
+
+runfile('B:/ICT3-1/OTHER STUUF/SPYDER/ARRAY.py', wdir='B:/ICT3-1/OTHER STUUF/SPYDER')
+[1 2 3 4]
+[11 12 13 14]
+[[ 1 11]
+ [ 2 12]
+ [ 3 13]
+ [ 4 14]]
+
+#ADDITION OF ARRAY
+
+import numpy as np
+
+n1=np.arange(1,5)
+n2=np.arange(11,15)
+print(n1)
+print(n2)
+print(n1+n2)
+
+        runfile('B:/ICT3-1/OTHER STUUF/SPYDER/ARRAY.py', wdir='B:/ICT3-1/OTHER STUUF/SPYDER')
+        [1 2 3 4]
+        [11 12 13 14]
+        [12 14 16 18]
+
+#SUBSTRACTION OF ARRAY
+
+import numpy as np
+
+n1=np.arange(1,5)
+n2=np.arange(11,15)
+print(n1)
+print(n2)
+print(n1-n2)
+
+        runfile('B:/ICT3-1/OTHER STUUF/SPYDER/ARRAY.py', wdir='B:/ICT3-1/OTHER STUUF/SPYDER')
+        [1 2 3 4]
+        [11 12 13 14]
+        [-10 -10 -10 -10]
+
+#MULTIPLICATION
+
+import numpy as np
+
+n1=np.arange(1,5)
+n2=np.arange(11,15)
+print(n1)
+print(n2)
+print(n1*n2)
+
+runfile('B:/ICT3-1/OTHER STUUF/SPYDER/ARRAY.py', wdir='B:/ICT3-1/OTHER STUUF/SPYDER')
+[1 2 3 4]
+[11 12 13 14]
+[11 24 39 56]
+
+#
+#
+#
+#
 #
