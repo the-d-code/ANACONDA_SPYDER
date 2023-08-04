@@ -311,6 +311,30 @@ n1=np.array([1,4,5,8,9])
         [1 4]
 
 
+# STORE ARRAY USING SCONDARY MEMORY
+
+import numpy as np
+
+<br>n1=np.array([1,4,5,8,9])
+<br>n2=np.array([5,6,7,8,9])
+<br>np.save('mynparray',n1)
+
+    https://github.com/the-d-code/ANACONDA_SPYDER/blob/main/Numpy/NPARRAY%20S.PNG
+
+# LOAD FILE ABOVE WE CREATE
+
+import numpy as np
+
+n1=np.array([1,4,5,8,9])
+<br>n2=np.array([5,6,7,8,9])
+
+<br>np.save('mynparray',n1)
+<br>n3=np.load('mynparray.npy')
+<br>print(n3)
+
+         runfile('B:/ICT3-1/OTHER STUUF/SPYDER/ARRAY.py', wdir='B:/ICT3-1/OTHER STUUF/SPYDER')
+        [1 4 5 8 9]
+#
 #
 #
 #
