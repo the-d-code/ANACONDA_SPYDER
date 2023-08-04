@@ -108,9 +108,101 @@ n1=np.arange(10,90,10)
          [30 40]
          [50 60]
          [70 80]]
+         
+# COMBINE 2 NUMPY ARRAY
 
+import numpy as np
 
-#
+n1=np.arange(1,5)
+<br>n2=np.arange(11,15)
+<br>print(n1)
+<br>print(n2)
+<br>print(np.hstack((n1,n2)))
+
+        runfile('B:/ICT3-1/OTHER STUUF/SPYDER/ARRAY.py', wdir='B:/ICT3-1/OTHER STUUF/SPYDER')
+        [1 2 3 4]
+        [11 12 13 14]
+        [ 1  2  3  4 11 12 13 14]
+
+#VARTICAL COMBINE
+
+import numpy as np
+
+n1=np.arange(1,5)
+<br>n2=np.arange(11,15)
+<br>print(n1)
+<br>print(n2)
+<br>print(np.vstack((n1,n2)))
+
+        runfile('B:/ICT3-1/OTHER STUUF/SPYDER/ARRAY.py', wdir='B:/ICT3-1/OTHER STUUF/SPYDER')
+        [1 2 3 4]
+        [11 12 13 14]
+        [[ 1  2  3  4]
+         [11 12 13 14]]
+
+#column stack
+
+import numpy as np
+
+n1=np.arange(1,5)
+<br>n2=np.arange(11,15)
+<br>print(n1)
+<br>print(n2)
+<br>print(np.column_stack((n1,n2)))
+
+runfile('B:/ICT3-1/OTHER STUUF/SPYDER/ARRAY.py', wdir='B:/ICT3-1/OTHER STUUF/SPYDER')
+[1 2 3 4]
+[11 12 13 14]
+[[ 1 11]
+ [ 2 12]
+ [ 3 13]
+ [ 4 14]]
+
+#ADDITION OF ARRAY
+
+import numpy as np
+
+n1=np.arange(1,5)
+<br>n2=np.arange(11,15)
+<br>print(n1)
+<br>print(n2)
+<br>print(n1+n2)
+
+        runfile('B:/ICT3-1/OTHER STUUF/SPYDER/ARRAY.py', wdir='B:/ICT3-1/OTHER STUUF/SPYDER')
+        [1 2 3 4]
+        [11 12 13 14]
+        [12 14 16 18]
+
+#SUBSTRACTION OF ARRAY
+
+import numpy as np
+
+n1=np.arange(1,5)
+<br>n2=np.arange(11,15)
+<br>print(n1)
+<br>print(n2)
+<br>print(n1-n2)
+
+        runfile('B:/ICT3-1/OTHER STUUF/SPYDER/ARRAY.py', wdir='B:/ICT3-1/OTHER STUUF/SPYDER')
+        [1 2 3 4]
+        [11 12 13 14]
+        [-10 -10 -10 -10]
+
+#MULTIPLICATION
+
+import numpy as np
+
+n1=np.arange(1,5)
+<br>n2=np.arange(11,15)
+<br>print(n1)
+<br>print(n2)
+<br>print(n1*n2)
+
+runfile('B:/ICT3-1/OTHER STUUF/SPYDER/ARRAY.py', wdir='B:/ICT3-1/OTHER STUUF/SPYDER')
+[1 2 3 4]
+[11 12 13 14]
+[11 24 39 56]
+
 #
 #
 #
