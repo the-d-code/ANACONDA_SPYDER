@@ -327,8 +327,7 @@ n2=np.array([5,6,7,8,9])
 
 np.save('mynparray',n1)
 
-SS
-
+    https://github.com/the-d-code/ANACONDA_SPYDER/blob/main/Numpy/NPARRAY%20S.PNG
 # LOAD FILE ABOVE WE CREATE
 
 import numpy as np
