@@ -150,13 +150,13 @@ n1=np.arange(1,5)
 <br>print(n2)
 <br>print(np.column_stack((n1,n2)))
 
-runfile('B:/ICT3-1/OTHER STUUF/SPYDER/ARRAY.py', wdir='B:/ICT3-1/OTHER STUUF/SPYDER')
-[1 2 3 4]
-[11 12 13 14]
-[[ 1 11]
- [ 2 12]
- [ 3 13]
- [ 4 14]]
+        runfile('B:/ICT3-1/OTHER STUUF/SPYDER/ARRAY.py', wdir='B:/ICT3-1/OTHER STUUF/SPYDER')
+        [1 2 3 4]
+        [11 12 13 14]
+        [[ 1 11]
+         [ 2 12]
+         [ 3 13]
+         [ 4 14]]
 
 #ADDITION OF ARRAY
 
@@ -198,10 +198,10 @@ n1=np.arange(1,5)
 <br>print(n2)
 <br>print(n1*n2)
 
-runfile('B:/ICT3-1/OTHER STUUF/SPYDER/ARRAY.py', wdir='B:/ICT3-1/OTHER STUUF/SPYDER')
-[1 2 3 4]
-[11 12 13 14]
-[11 24 39 56]
+        runfile('B:/ICT3-1/OTHER STUUF/SPYDER/ARRAY.py', wdir='B:/ICT3-1/OTHER STUUF/SPYDER')
+        [1 2 3 4]
+        [11 12 13 14]
+        [11 24 39 56]
 
 #
 #
