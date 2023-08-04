@@ -140,7 +140,7 @@ n1=np.arange(1,5)
         [[ 1  2  3  4]
          [11 12 13 14]]
 
-#column stack
+#COLUMN STACK
 
 import numpy as np
 
@@ -158,7 +158,7 @@ n1=np.arange(1,5)
          [ 3 13]
          [ 4 14]]
 
-#ADDITION OF ARRAY
+# ADDITION OF ARRAY
 
 import numpy as np
 
@@ -173,7 +173,7 @@ n1=np.arange(1,5)
         [11 12 13 14]
         [12 14 16 18]
 
-#SUBSTRACTION OF ARRAY
+# SUBSTRACTION OF ARRAY
 
 import numpy as np
 
@@ -188,7 +188,7 @@ n1=np.arange(1,5)
         [11 12 13 14]
         [-10 -10 -10 -10]
 
-#MULTIPLICATION
+# MULTIPLICATION
 
 import numpy as np
 
@@ -203,8 +203,114 @@ n1=np.arange(1,5)
         [11 12 13 14]
         [11 24 39 56]
 
-#
-#
+
+# MEAN OF ARRAY
+import numpy as np
+
+n2=np.arange(10,15)
+<br>print(n2)
+<br>print(np.mean(n2))
+
+        runfile('B:/ICT3-1/OTHER STUUF/SPYDER/ARRAY.py', wdir='B:/ICT3-1/OTHER STUUF/SPYDER')
+        [10 11 12 13 14]
+        12.0
+
+# sum of single arrya
+import numpy as np
+
+n2=np.arange(10,15)
+<br>print(n2)
+<br>print(np.sum(n2))
+
+        runfile('B:/ICT3-1/OTHER STUUF/SPYDER/ARRAY.py', wdir='B:/ICT3-1/OTHER STUUF/SPYDER')
+        [10 11 12 13 14]
+        60
+
+# Standerd Deviation
+
+import numpy as np
+
+n2=np.arange(10,15)
+<br>print(n2)
+<br>print(np.std(n2))
+
+        runfile('B:/ICT3-1/OTHER STUUF/SPYDER/ARRAY.py', wdir='B:/ICT3-1/OTHER STUUF/SPYDER')
+        [10 11 12 13 14]
+        1.4142135623730951
+
+# ADD VALUE / SCALLER
+
+import numpy as np
+
+n1=np.arange(1,5)
+<br>n2=np.arange(10,15)
+<br>print(n1+2)
+
+        runfile('B:/ICT3-1/OTHER STUUF/SPYDER/ARRAY.py', wdir='B:/ICT3-1/OTHER STUUF/SPYDER')
+        [3 4 5 6]
+
+import numpy as np
+
+n1=np.arange(1,5)
+<br>n2=np.arange(10,15)
+<br>print(n1/2)
+
+        runfile('B:/ICT3-1/OTHER STUUF/SPYDER/ARRAY.py', wdir='B:/ICT3-1/OTHER STUUF/SPYDER')
+        [0.5 1.  1.5 2. ]
+
+import numpy as np
+
+n1=np.arange(1,5)
+<br>n2=np.arange(10,15)
+<br>print(n1*2)
+
+        runfile('B:/ICT3-1/OTHER STUUF/SPYDER/ARRAY.py', wdir='B:/ICT3-1/OTHER STUUF/SPYDER')
+        [2 4 6 8]
+
+# USING ARRAY KEYWORD
+
+import numpy as np
+
+n1=np.array([1,4,5,8,9])
+<br>n2=np.array([5,6,7,8,9])
+<br>print(n1)
+<br>print(n1)
+
+        runfile('B:/ICT3-1/OTHER STUUF/SPYDER/ARRAY.py', wdir='B:/ICT3-1/OTHER STUUF/SPYDER')
+        [1 4 5 8 9]
+        [1 4 5 8 9]
+
+# STORE COMMAN ITEM IN OTHER ARRAY /INTERSECTION
+
+import numpy as np
+
+n1=np.array([1,4,5,8,9])
+<br>n2=np.array([5,6,7,8,9])
+<br>print(n1)
+<br>print(n1)
+<br>print(np.intersect1d(n1,n2))
+
+        runfile('B:/ICT3-1/OTHER STUUF/SPYDER/ARRAY.py', wdir='B:/ICT3-1/OTHER STUUF/SPYDER')
+        [1 4 5 8 9]
+        [1 4 5 8 9]
+        [5 8 9]
+
+# DIFFERENT ITEM 
+
+import numpy as np
+
+n1=np.array([1,4,5,8,9])
+<br>n2=np.array([5,6,7,8,9])
+<br>print(n1)
+<br>print(n1)
+<br>print(np.setdiff1d(n1,n2))
+        
+        runfile('B:/ICT3-1/OTHER STUUF/SPYDER/ARRAY.py', wdir='B:/ICT3-1/OTHER STUUF/SPYDER')
+        [1 4 5 8 9]
+        [1 4 5 8 9]
+        [1 4]
+
+
 #
 #
 #
