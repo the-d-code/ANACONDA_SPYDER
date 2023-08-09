@@ -74,5 +74,32 @@ S1=pd.Series([[5,10],[20,25],[30,40]])
     dtype: object
 
 
+# CREATE OWN INDEX TO ASSIGN VALUE
+
+import pandas as pd
+
+S1=pd.Series(data=[5,10,15,20],index=['A','B','C','D'])
+<br>print(S1)
+
+    runfile('B:/ICT3-1/OTHER STUUF/SPYDER/ARRAY.py', wdir='B:/ICT3-1/OTHER STUUF/SPYDER')
+    A     5
+    B    10
+    C    15
+    D    20
+    dtype: int64
+
+###
+
+import pandas as pd
+
+S1=pd.Series(data=[5,10,15,20],index=['Hello','Python','Set','D'])
+print(S1)
+
+    runfile('B:/ICT3-1/OTHER STUUF/SPYDER/ARRAY.py', wdir='B:/ICT3-1/OTHER STUUF/SPYDER')
+    Hello      5
+    Python    10
+    Set       15
+    D         20
+    dtype: int64
 
 
