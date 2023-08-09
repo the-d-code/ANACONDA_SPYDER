@@ -88,11 +88,9 @@ S1=pd.Series(data=[5,10,15,20],index=['A','B','C','D'])
     D    20
     dtype: int64
 
-# 
-
 import pandas as pd
 
-S1=pd.Series(data=[5,10,15,20],index=['Hello','Python','Set','D'])
+S1=pd.Series(data=[5,10,15,20],index=['Hello','Python','Set','D'])<br>
 <br>print(S1)
 
     runfile('B:/ICT3-1/OTHER STUUF/SPYDER/ARRAY.py', wdir='B:/ICT3-1/OTHER STUUF/SPYDER')
