@@ -269,4 +269,24 @@ df=pd.read_csv("iris.csv")
       Name: Species, Length: 150, dtype: object
 
 
+# top 10 records of specific column
+
+import pandas as pd
+
+df=pd.read_csv("iris.csv")
+<br>print(df['Species',].head(10))
+
+          runfile('B:/ICT3-1/OTHER STUUF/SPYDER/PANDAS.py', wdir='B:/ICT3-1/OTHER STUUF/SPYDER')
+          0    Iris-setosa
+          1    Iris-setosa
+          2    Iris-setosa
+          3    Iris-setosa
+          4    Iris-setosa
+          5    Iris-setosa
+          6    Iris-setosa
+          7    Iris-setosa
+          8    Iris-setosa
+          9    Iris-setosa
+          Name: Species, dtype: object
+
 
