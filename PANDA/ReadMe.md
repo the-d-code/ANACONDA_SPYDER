@@ -228,7 +228,7 @@ df=pd.read_csv("iris.csv")
 import pandas as pd
 
 df=pd.read_csv("iris.csv")
-print(df.tail(10))
+<br>print(df.tail(10))
 
 
       In [10]: runfile('B:/ICT3-1/OTHER STUUF/SPYDER/PANDAS.py', wdir='B:/ICT3-1/OTHER STUUF/SPYDER')
@@ -252,7 +252,7 @@ print(df.tail(10))
 import pandas as pd
 
 df=pd.read_csv("iris.csv")
-print(df['Species'])
+<br>print(df['Species'])
 
       runfile('B:/ICT3-1/OTHER STUUF/SPYDER/PANDAS.py', wdir='B:/ICT3-1/OTHER STUUF/SPYDER')
       0         Iris-setosa
