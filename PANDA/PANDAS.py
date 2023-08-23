@@ -184,27 +184,118 @@ print(df['Species',].head(10))
           9    Iris-setosa
           Name: Species, dtype: object
 
+# Show column selected
+
+
+import pandas as pd
+
+df=pd.read_csv("iris.csv")
+print(df[['PetalWidthCm','Species']].head())
+
+          runfile('B:/ICT3-1/OTHER STUUF/SPYDER/PANDAS.py', wdir='B:/ICT3-1/OTHER STUUF/SPYDER')
+             PetalWidthCm      Species
+          0           0.2  Iris-setosa
+          1           0.2  Iris-setosa
+          2           0.2  Iris-setosa
+          3           0.2  Iris-setosa
+          4           0.2  Iris-setosa
+
+
+# CHECK NULL CALUE
+
+import pandas as pd
+
+df=pd.read_csv("iris.csv")
+print(df[['PetalWidthCm','Species']].head().isnull())
+
+          runfile('B:/ICT3-1/OTHER STUUF/SPYDER/PANDAS.py', wdir='B:/ICT3-1/OTHER STUUF/SPYDER')
+             PetalWidthCm  Species
+          0         False    False
+          1         False    False
+          2         False    False
+          3         False    False
+          4         False    False
+
+# CHECK NULL FROM ALL
+
+import pandas as pd
+
+df=pd.read_csv("iris.csv")
+print(df.head().isnull())
+
+          runfile('B:/ICT3-1/OTHER STUUF/SPYDER/PANDAS.py', wdir='B:/ICT3-1/OTHER STUUF/SPYDER')
+                Id  SepalLengthCm  SepalWidthCm  PetalLengthCm  PetalWidthCm  Species
+          0  False          False         False          False         False    False
+          1  False          False         False          False         False    False
+          2  False          False         False          False         False    False
+          3  False          False         False          False         False    False
+          4  False          False         False          False         False    False
 
 
 
+# SPECIFIC ITEM OF COLUMN
+
+import pandas as pd
+
+df=pd.read_csv("iris.csv")
+print(df.at[2,'Species'])
+
+          runfile('B:/ICT3-1/OTHER STUUF/SPYDER/PANDAS.py', wdir='B:/ICT3-1/OTHER STUUF/SPYDER')
+          Iris-setosa
 
 
+# location of data
 
 
+import pandas as pd
+
+df=pd.read_csv("iris.csv")
+print(df.loc[2])
+
+          runfile('B:/ICT3-1/OTHER STUUF/SPYDER/PANDAS.py', wdir='B:/ICT3-1/OTHER STUUF/SPYDER')
+          Id                         3
+          SepalLengthCm            4.7
+          SepalWidthCm             3.2
+          PetalLengthCm            1.3
+          PetalWidthCm             0.2
+          Species          Iris-setosa
+          Name: 2, dtype: object
+
+# INT location or value 
+
+import pandas as pd
+
+df=pd.read_csv("iris.csv")
+print(df.iloc[2,2])
+
+          runfile('B:/ICT3-1/OTHER STUUF/SPYDER/PANDAS.py', wdir='B:/ICT3-1/OTHER STUUF/SPYDER')
+          3.2
 
 
+# FIRST 2 ROW AND COLUMN
 
+import pandas as pd
 
+df=pd.read_csv("iris.csv")
+print(df.iloc[0:2,0:2])
 
+          runfile('B:/ICT3-1/OTHER STUUF/SPYDER/PANDAS.py', wdir='B:/ICT3-1/OTHER STUUF/SPYDER')
+             Id  SepalLengthCm
+          0   1            5.1
+          1   2            4.9
 
+# Frequency count
 
+import pandas as pd
 
+df=pd.read_csv("iris.csv")
+print(df['Species'].value_counts())
 
-
-
-
-
-
+          runfile('B:/ICT3-1/OTHER STUUF/SPYDER/PANDAS.py', wdir='B:/ICT3-1/OTHER STUUF/SPYDER')
+          Iris-setosa        50
+          Iris-versicolor    50
+          Iris-virginica     50
+          Name: Species, dtype: int64
 
 
 
