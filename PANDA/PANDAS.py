@@ -298,6 +298,93 @@ print(df['Species'].value_counts())
           Name: Species, dtype: int64
 
 
+# 
+import pandas as pd
+
+df=pd.read_csv("iris.csv")
+
+from numpy import NaN
+df.at[1, 'SepalLenghtCm']=NaN
+print(df['SepalLenghtCm'].head())
+
+
+          runfile('B:/ICT3-1/OTHER STUUF/SPYDER/PANDAS.py', wdir='B:/ICT3-1/OTHER STUUF/SPYDER')
+          0   NaN
+          1   NaN
+          2   NaN
+          3   NaN
+          4   NaN
+          Name: SepalLenghtCm, dtype: float64
+
+# isna CHECK THE VALUE IS NAME OR NOT
+
+import pandas as pd
+
+df=pd.read_csv("iris.csv")
+
+from numpy import NaN
+
+df.loc[1, 'SepalLenghtCm']=NaN
+print(df['SepalLenghtCm'].isna().head())
+
+          runfile('B:/ICT3-1/OTHER STUUF/SPYDER/PANDAS.py', wdir='B:/ICT3-1/OTHER STUUF/SPYDER')
+          0    True
+          1    True
+          2    True
+          3    True
+          4    True
+          Name: SepalLenghtCm, dtype: bool
+          
+          This version of python seems to be incorrectly compiled
+          (internal generated filenames are not absolute).
+          This may make the debugger miss breakpoints.
+          Related bug: http://bugs.python.org/issue1666807
+
+
+# Sum Of value
+
+import pandas as pd
+
+df=pd.read_csv("iris.csv")
+
+from numpy import NaN
+
+df.loc[1, 'SepalLenghtCm']=NaN
+print(df['SepalLenghtCm'].isna().sum())
+
+          runfile('B:/ICT3-1/OTHER STUUF/SPYDER/PANDAS.py', wdir='B:/ICT3-1/OTHER STUUF/SPYDER')
+          150
+
+#
+
+
+import pandas as pd
+
+df=pd.read_csv("iris.csv")
+
+from numpy import NaN
+
+df.loc[1, 'SepalLenghtCm']=NaN
+print(df['SepalLenghtCm'].isna().sum())
+print(df.isna().sum())
+
+          
+          runfile('B:/ICT3-1/OTHER STUUF/SPYDER/PANDAS.py', wdir='B:/ICT3-1/OTHER STUUF/SPYDER')
+          150
+          Id                 0
+          SepalLengthCm      0
+          SepalWidthCm       0
+          PetalLengthCm      0
+          PetalWidthCm       0
+          Species            0
+          SepalLenghtCm    150
+          dtype: int64
+
+
+
+
+
+
 
 
 
