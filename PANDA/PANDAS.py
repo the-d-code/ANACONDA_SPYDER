@@ -380,22 +380,47 @@ print(df.isna().sum())
           SepalLenghtCm    150
           dtype: int64
 
-
-
-
-
-
-
-
-
-
-
-
-
+# Replace value / change cell value
 
 import pandas as pd
+
 df=pd.read_csv("iris.csv")
 
-print(df.loc[0:3,'Gender'])
-print(df.iloc[0:3,5])
-print(df.iloc[2:2,2:4])
+from numpy import NaN
+
+df.at[1, 'SepalLenghtCm']=NaN
+
+avg=df['SepalLenghtCm'].mean()
+df=df['SepalLenghtCm'].fillna(avg)
+print(df.head())
+
+
+# Count value
+
+import pandas as pd
+
+df=pd.read_csv("iris.csv")
+
+ds=df(['Species'].value_counts())
+
+
+
+# Replcae value by assgine new value
+
+import pandas as pd
+
+df=pd.read_csv("iris.csv")
+
+ds=df['Species'].map({'Iris-setosa':0,'Iris-versicolor':1})
+print(ds.tail())
+
+# 
+
+import pandas as pd
+
+df=pd.read_csv("iris.csv")
+
+ds=df['Species'].map({'Iris-setosa':0,'Iris-versicolor':1})
+print(ds)
+
+
