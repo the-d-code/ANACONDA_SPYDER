@@ -136,9 +136,18 @@ print(x_test.head())
         101            5.8           2.7            5.1           1.9
 
 
+# Model Creation
+import numpy as np
+import pandas as pd
+df=pd.read_csv('iris.csv')
+x = df[['SepalLengthCm','SepalWidthCm','PetalLengthCm','PetalWidthCm']]
+y = df['Species']
 
+from sklearn.neighbors import KNeighborsClassifier
+model = KNeighborsClassifier()
 
-
+          In [22]: runfile('B:/ICT3-1/OTHER STUUF/SPYDER/KNN MODEL.py', wdir='B:/ICT3-1/OTHER STUUF/SPYDER')
+          // Name of file will rename with add model
 
 
 
