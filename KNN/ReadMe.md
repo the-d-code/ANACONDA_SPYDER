@@ -148,9 +148,75 @@ from sklearn.neighbors import KNeighborsClassifier
 <br>model = KNeighborsClassifier()
 
           In [22]: runfile('B:/ICT3-1/OTHER STUUF/SPYDER/KNN MODEL.py', wdir='B:/ICT3-1/OTHER STUUF/SPYDER')
-          // Name of file will rename with add model
+       
+
+# Model Training
+
+import numpy as np
+<br>import pandas as pd
+<br>df=pd.read_csv('iris.csv')
+<br>x = df[['SepalLengthCm','SepalWidthCm','PetalLengthCm','PetalWidthCm']]
+<br>y = df['Species']
+
+from sklearn.model_selection import train_test_split
+<br>from sklearn.neighbors import KNeighborsClassifier
+<br>from sklearn.preprocessing import LabelEncoder
+
+model = KNeighborsClassifier()
+<br>x_train,x_test,y_train,y_test = train_test_split(x,y,test_size=0.20)
+
+model.fit(x_train,y_train)
+<br>result = model.predict(x_test)
+<br>print(result)
+
+          In [26]: runfile('B:/ICT3-1/OTHER STUUF/SPYDER/KNN MODEL.py', wdir='B:/ICT3-1/OTHER STUUF/SPYDER')
+          ['Iris-versicolor' 'Iris-virginica' 'Iris-versicolor' 'Iris-setosa'
+           'Iris-versicolor' 'Iris-setosa' 'Iris-setosa' 'Iris-virginica'
+           'Iris-virginica' 'Iris-versicolor' 'Iris-versicolor' 'Iris-setosa'
+           'Iris-setosa' 'Iris-versicolor' 'Iris-virginica' 'Iris-virginica'
+           'Iris-setosa' 'Iris-setosa' 'Iris-virginica' 'Iris-versicolor'
+           'Iris-setosa' 'Iris-setosa' 'Iris-setosa' 'Iris-versicolor'
+           'Iris-versicolor' 'Iris-versicolor' 'Iris-virginica' 'Iris-setosa'
+           'Iris-versicolor' 'Iris-virginica']
 
 
+# Model Performance Evalution
+
+import numpy as np
+<br>import pandas as pd
+<br>df=pd.read_csv('iris.csv')
+
+from sklearn.preprocessing import LabelEncoder
+
+#Separating feature and target variables
+<br>x = df[['SepalLengthCm','SepalWidthCm','PetalLengthCm','PetalWidthCm']]
+<br>y = df['Species']
+
+#dividing Dataset into training and testing dataset | random stat for same output
+<br>from sklearn.model_selection import train_test_split
+<br>x_train,x_test,y_train,y_test = train_test_split(x,y,test_size=0.20, random_state=5)
+
+#Model Creation
+<br>from sklearn.neighbors import KNeighborsClassifier
+<br>model = KNeighborsClassifier()
+
+#Model Training
+<br>model.fit(x_train,y_train)
+<br>result = model.predict(x_test)
+
+#Model Performance Evalution
+<br>from sklearn.metrics import confusion_matrix
+<br>cm = confusion_matrix(result, y_test)
+<br>print(cm)
+<br>from sklearn.metrics import accuracy_score
+<br>acc=accuracy_score(result, y_test)*100
+<br>print(acc)
+
+          In [31]: runfile('B:/ICT3-1/OTHER STUUF/SPYDER/KNN MODEL.py', wdir='B:/ICT3-1/OTHER STUUF/SPYDER')
+          [[ 8  0  0]
+           [ 0  9  0]
+           [ 0  2 11]]
+          93.33333333333333
 
 
 
