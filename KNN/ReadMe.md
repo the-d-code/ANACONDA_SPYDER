@@ -1,9 +1,9 @@
 # Reading Dataset
 
 import numpy as np
-import pandas as pd
-df=pd.read_csv('iris.csv')
-print(df.head())
+<br>import pandas as pd
+<br>df=pd.read_csv('iris.csv')
+<br>print(df.head())
 
           In [1]: runfile('B:/ICT3-1/OTHER STUUF/SPYDER/KNN MODEL.py', wdir='B:/ICT3-1/OTHER STUUF/SPYDER')
              Id  SepalLengthCm  SepalWidthCm  PetalLengthCm  PetalWidthCm      Species
@@ -16,9 +16,9 @@ print(df.head())
 # Print Specific Line
 
 import numpy as np
-import pandas as pd
-df=pd.read_csv('iris.csv')
-print(df['Species'])
+<br>import pandas as pd
+<br>df=pd.read_csv('iris.csv')
+<br>print(df['Species'])
 
         In [4]: runfile('B:/ICT3-1/OTHER STUUF/SPYDER/KNN MODEL.py', wdir='B:/ICT3-1/OTHER STUUF/SPYDER')
         0         Iris-setosa
@@ -38,9 +38,9 @@ print(df['Species'])
 # COUNT DATA
 
 import numpy as np
-import pandas as pd
-df=pd.read_csv('iris.csv')
-print(df['Species'].value_counts())
+<br>import pandas as pd
+<br>df=pd.read_csv('iris.csv')
+<br>print(df['Species'].value_counts())
 
       In [6]: runfile('B:/ICT3-1/OTHER STUUF/SPYDER/KNN MODEL.py', wdir='B:/ICT3-1/OTHER STUUF/SPYDER')
       Iris-setosa        50
@@ -51,13 +51,13 @@ print(df['Species'].value_counts())
 # DataSet Encoding
 
 import numpy as np
-import pandas as pd
-df=pd.read_csv('iris.csv')
+<br>import pandas as pd
+<br>df=pd.read_csv('iris.csv')
 
 from sklearn.preprocessing import LabelEncoder
-le = LabelEncoder()
-df = df.apply(le.fit_transform)
-print(df['Species'])
+<br>le = LabelEncoder()
+<br>df = df.apply(le.fit_transform)
+<br>print(df['Species'])
 
           In [14]: runfile('B:/ICT3-1/OTHER STUUF/SPYDER/KNN MODEL.py', wdir='B:/ICT3-1/OTHER STUUF/SPYDER')
           0      0
@@ -77,13 +77,13 @@ print(df['Species'])
 # Separating feature and target variables
 
 import numpy as np
-import pandas as pd
-df=pd.read_csv('iris.csv')
+<br>import pandas as pd
+<br>df=pd.read_csv('iris.csv')
 
 x = df[['SepalLengthCm','SepalWidthCm','PetalLengthCm','PetalWidthCm']]
-y = df['Species']
-print(x)
-print(y)
+<br>y = df['Species']
+<br>print(x)
+<br>print(y)
 
 
           In [10]: runfile('B:/ICT3-1/OTHER STUUF/SPYDER/KNN MODEL.py', wdir='B:/ICT3-1/OTHER STUUF/SPYDER')
@@ -118,14 +118,14 @@ print(y)
 
 # dividing Dataset into training and testing dataset
 import numpy as np
-import pandas as pd
-df=pd.read_csv('iris.csv')
+<br>import pandas as pd
+<br>df=pd.read_csv('iris.csv')
 
 from sklearn.model_selection import train_test_split
-x = df[['SepalLengthCm','SepalWidthCm','PetalLengthCm','PetalWidthCm']]
-y = df['Species']
-x_train,x_test,y_train,y_test = train_test_split(x,y,test_size=0.20)
-print(x_test.head())
+<br>x = df[['SepalLengthCm','SepalWidthCm','PetalLengthCm','PetalWidthCm']]
+<br>y = df['Species']
+<br>x_train,x_test,y_train,y_test = train_test_split(x,y,test_size=0.20)
+<br>print(x_test.head())
 
         In [18]: runfile('B:/ICT3-1/OTHER STUUF/SPYDER/KNN MODEL.py', wdir='B:/ICT3-1/OTHER STUUF/SPYDER')
              SepalLengthCm  SepalWidthCm  PetalLengthCm  PetalWidthCm
