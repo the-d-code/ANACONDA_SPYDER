@@ -136,7 +136,19 @@ from sklearn.model_selection import train_test_split
         101            5.8           2.7            5.1           1.9
 
 
+# Model Creation
 
+import numpy as np
+<br>import pandas as pd
+<br>df=pd.read_csv('iris.csv')
+<br>x = df[['SepalLengthCm','SepalWidthCm','PetalLengthCm','PetalWidthCm']]
+<br>y = df['Species']
+
+from sklearn.neighbors import KNeighborsClassifier
+<br>model = KNeighborsClassifier()
+
+          In [22]: runfile('B:/ICT3-1/OTHER STUUF/SPYDER/KNN MODEL.py', wdir='B:/ICT3-1/OTHER STUUF/SPYDER')
+          // Name of file will rename with add model
 
 
 
