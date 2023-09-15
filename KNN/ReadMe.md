@@ -219,6 +219,49 @@ from sklearn.preprocessing import LabelEncoder
           93.33333333333333
 
 
+# **BAYESIAN ALGORTHAM**
+
+# Read Dataset
+import numpy as np
+<br>import pandas as pd
+<br>df=pd.read_csv('iris.csv')
+<br>#print(df.head())
+
+# Dataset Encoding
+from sklearn.preprocessing import LabelEncoder
+<br>le=LabelEncoder()
+<br>df=df.apply(le.fit_transform)
+<br>#print(df['Species'].head())
+
+# Separating feature and target variables
+x = df[['SepalLengthCm','SepalWidthCm','PetalLengthCm','PetalWidthCm']]
+<br>#print(x.head())
+<br>y = df['Species']
+<br>#print(y.head())
+
+# dividing Dataset into training and testing dataset | random stat for same output
+<br>from sklearn.model_selection import train_test_split
+<br>x_train,x_test,y_train,y_test=train_test_split(x,y, test_size=0.20, random_state=5)
+<br>#print(x_train.head())
+
+# Model Creation
+<br>from sklearn.naive_bayes import GaussianNB
+<br>model=GaussianNB()
+
+# Model Training
+model.fit(x_train,y_train)
+result = model.predict(x_test)
+#print(result)
+
+# Model Performance Evalution
+from sklearn.metrics import confusion_matrix
+<br>cm = confusion_matrix(y_test, result)
+<br>#print(cm)
+
+# Accurancy Check
+from sklearn.metrics import accuracy_score
+<br>acc=accuracy_score(result,y_test)*100
+<br>#print(acc)
 
 
 
