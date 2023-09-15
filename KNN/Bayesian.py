@@ -80,7 +80,22 @@ print(result)
       runfile('B:/ICT3-1/OTHER STUUF/SPYDER/Bayesian.py', wdir='B:/ICT3-1/OTHER STUUF/SPYDER')
       [1 1 2 0 2 1 0 2 0 1 1 1 2 2 0 0 2 2 0 0 1 2 0 1 1 2 1 1 1 2]
 
+#Model Performance Evalution
+from sklearn.metrics import confusion_matrix
+cm = confusion_matrix(result, y_test)
+print(cm)
 
+      runfile('B:/ICT3-1/OTHER STUUF/SPYDER/Bayesian.py', wdir='B:/ICT3-1/OTHER STUUF/SPYDER')
+      [[ 8  0  0]
+       [ 0 10  2]
+       [ 0  1  9]]
 
+# Accurancy Check
+from sklearn.metrics import accuracy_score
+acc=accuracy_score(result, y_test)*100
+print(acc)
+
+    runfile('B:/ICT3-1/OTHER STUUF/SPYDER/Bayesian.py', wdir='B:/ICT3-1/OTHER STUUF/SPYDER')
+    90.0
 
 
