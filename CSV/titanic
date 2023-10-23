@@ -1,0 +1,80 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+"""
+Created on Sat Sep  2 05:32:27 2023
+
+@author: root
+"""
+
+import pandas as pd
+from numpy import NaN
+
+
+pd.set_option('display.max_columns', None)
+pd.set_option('display.max_rows', None)
+df = pd.read_csv("titanic.csv")
+
+print(df.head())
+# =============================================================================
+# 1. Write a Pandas program to display a summary of the basic information about
+# a specified DataFrame and its data.
+
+# =============================================================================
+ print(df.describe())
+ print(df.info())
+# =============================================================================
+
+
+# 2. Write a Pandas program to get the first 3 rows of a given DataFrame.
+
+# =============================================================================
+ print(df.head(3))
+# =============================================================================
+
+# 3. Write a Pandas program to select the 'Name' and 'Age' columns from the fol-
+# lowing DataFrame.
+
+# =============================================================================
+ print(df[['Name','Age']])
+# =============================================================================
+
+# 4. Write a Pandas program to select the rows where the Age is greater than 60
+
+# =============================================================================
+ print(df.loc[df['Age']>60])
+# =============================================================================
+
+# 5. Write a Pandas program to select the rows where the Age is between 40 and
+# 50.
+
+# =============================================================================
+ print(df.loc[(df['Age']>40) & (df['Age']<50)])
+# 
+# =============================================================================
+# 6. Write a Pandas program to select the rows where the Age is missing, i.e. is
+# NaN
+
+# =============================================================================
+ print(df.loc[df['Age'].isna()])
+# =============================================================================
+
+# 7. Write a Pandas program to change the Embarked values to numeric.
+# =============================================================================
+ ds = df['Embarked'].map({'S':0,'C':1,'Q':2})
+ merge = pd.concat([df,ds],axis = 1)
+print(merge.head(30))
+# =============================================================================
+
+
+# 8. Write a Pandas program to count the no of passengers “Pclass”” wise.
+
+
+# 9. Write a Pandas program to delete the 'Fare” and “Cabin” columns from the
+# DataFrame.
+
+df.drop(['Fare'],axis=1)
+# 10. Write a Pandas program to count the NaN values in one or more columns
+# in DataFrame.
+
+print(df['Cabin'].isna().value_counts())
+# =============================================================================
